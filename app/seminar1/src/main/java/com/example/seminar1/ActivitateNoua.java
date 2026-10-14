@@ -26,6 +26,11 @@ public class ActivitateNoua extends AppCompatActivity {
 
     public void deschideActivitate(View view) {
         Intent it = new Intent(this, ActivitateRezultat.class);
+        Bundle bundle=new Bundle();
+        bundle.putString("mesaj", "Mesaj din prima activitate");
+        bundle.putInt("numar 1",5);
+        bundle.putInt("numar", 7);
+        it.putExtras(bundle);
         startActivity(it);
     }
 }
