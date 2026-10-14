@@ -33,6 +33,6 @@ public class ActivitateRezultat extends AppCompatActivity {
         builder.append(nr1);
         builder.append(" ");
         builder.append(nr2);
-        Toast.makeText(this, builder.toString(),Toast.LENGTH_SHORT);
+        Toast.makeText(this, builder.toString(),Toast.LENGTH_SHORT).show();
     }
 }
