@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adauga un frigider" />
+
+    <EditText
+        android:id="@+id/marca_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Marca" />
+
+    <EditText
+        android:id="@+id/pret_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pret"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/capacitate_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Capacitate (litri)"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/clasa_SP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/clase_energetice" />
+
+    <RadioGroup
+        android:id="@+id/culoare_RG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/alb_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Alb" />
+
+        <RadioButton
+            android:id="@+id/negru_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negru" />
+
+        <RadioButton
+            android:id="@+id/inox_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inox" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/noFrost_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Frost" />
+
+    <Switch
+        android:id="@+id/smart_SW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart" />
+
+    <RatingBar
+        android:id="@+id/rating_RTB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="salveaza"
+        android:text="Salveaza" />
+</LinearLayout>
